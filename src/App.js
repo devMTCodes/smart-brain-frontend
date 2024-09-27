@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import Particles from 'react-particles-js'; 
 import ParticlesBg from 'particles-bg'
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import Navigation from './components/Navigation/Navigation';
@@ -123,9 +122,9 @@ class App extends Component {
               <FaceRecognition box={box} imageUrl={imageUrl} />
             </div>
           : (
-             route === 'signin'
-             ? <Signin loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
-             : <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
+            route === 'signin'
+            ? <Signin loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
+            : <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
             )
         }
       </div>
